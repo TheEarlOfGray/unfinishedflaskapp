@@ -6,6 +6,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        sh 'pwd'
         sh 'echo $SECRET_TEXT > secret.txt'
         sh 'pip install -r requirements.txt'
         sh 'python3 app.py'
