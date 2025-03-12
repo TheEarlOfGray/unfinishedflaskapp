@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    SECRET_TEXT = credentials('SECRET_TEXT')
+    SECRET_TEXT=credentials('SECRET_TEXT')
   }
   stages {
     stage('Build') {
